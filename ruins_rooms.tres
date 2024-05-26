@@ -1,7 +1,0 @@
-[gd_resource type="Resource" script_class="RoomArray" load_steps=2 format=3 uid="uid://ceexsi4wekbl3"]
-
-[ext_resource type="Script" path="res://room_array.gd" id="1_nr2a7"]
-
-[resource]
-script = ExtResource("1_nr2a7")
-rooms = Array[Resource("res://dungeon_room.gd")]([])

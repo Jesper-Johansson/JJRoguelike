@@ -34,13 +34,10 @@ func place_rooms(room_amount: int):
 		new_room.room_res = chosen_room
 		rooms.append(new_room)
 		
-	
 	for room in rooms:
 		current_tile = room.top_left
 		place_room_tiles(room.room_res)
 		
-	
-
 func place_room_tiles(room: DungeonRoom):
 	var col: int = 1
 	var line: int = 1
@@ -91,8 +88,6 @@ func get_room_rotated(room: DungeonRoom, rot: int) -> DungeonRoom:
 	
 func offset_room(room: DungeonRoom, extra_offset: int):
 	current_tile = Vector2i(10, 10)
-	#var room_width: int = room.row_length if rot == 1 or rot == 3 else room.tile_codes.length() / room.row_length
-	#var room_height: int = room.tile_codes.length() / room.row_length if rot == 1 or rot == 3 else room.row_length
 	var room_width: int = room.row_length
 	var room_height: int = room.tile_codes.length() / room.row_length
 	var extra_x_offset = randi_range(0, extra_offset)
@@ -126,6 +121,7 @@ func placement_overlaps(width: int, height: int, pos: Vector2i) -> bool:
 			return true
 	return false
 
+# This function does nothing, it's just here so children can override it
 func get_floor_tile() -> TileInfo:
 	return
 

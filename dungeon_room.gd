@@ -1,4 +1,4 @@
-class_name DungeonRoom
+class_name DungeonRoomm
 extends Resource
 
 @export var row_length: int
