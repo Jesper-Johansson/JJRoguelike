@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://blhtgnkkjq6k5" path="res://assets/tilesets/atlas_floor-16x16.png" id="1_on3t7"]
 [ext_resource type="Script" path="res://scripts/layout/ruins/RuinsLayout.cs" id="3_hoxi8"]
-[ext_resource type="Script" path="res://scripts/UserInterface.cs" id="4_ne6iq"]
+[ext_resource type="Script" path="res://scripts/ui/UserInterface.cs" id="4_hb28r"]
 [ext_resource type="PackedScene" uid="uid://b4advhxjl8t3u" path="res://scenes/interface/room_bounds.tscn" id="5_tmt8o"]
 [ext_resource type="Script" path="res://scenes/player_camera.gd" id="6_ndp8u"]
 
@@ -70,7 +70,6 @@ script = ExtResource("6_ndp8u")
 tile_set = SubResource("TileSet_m1354")
 format = 2
 script = ExtResource("3_hoxi8")
-RoomGroups = Array[Object]([])
 userInterface = NodePath("../User Interface")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -79,7 +78,7 @@ material = SubResource("ShaderMaterial_bh0ku")
 [node name="User Interface" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("4_ne6iq")
+script = ExtResource("4_hb28r")
 UIRectScene = ExtResource("5_tmt8o")
 
 [node name="ColorRect" type="ColorRect" parent="."]

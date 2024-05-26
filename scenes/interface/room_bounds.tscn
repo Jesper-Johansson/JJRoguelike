@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b4advhxjl8t3u"]
 
 [ext_resource type="Shader" path="res://assets/shader/roombounds.gdshader" id="1_f2c8g"]
-[ext_resource type="Script" path="res://scripts/UIRect.cs" id="2_u0o0n"]
+[ext_resource type="Script" path="res://scripts/ui/UIRect.cs" id="2_0hnuo"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_s04p8"]
 shader = ExtResource("1_f2c8g")
@@ -10,4 +10,4 @@ shader = ExtResource("1_f2c8g")
 material = SubResource("ShaderMaterial_s04p8")
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("2_u0o0n")
+script = ExtResource("2_0hnuo")
